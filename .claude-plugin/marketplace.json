@@ -1,0 +1,29 @@
+{
+  "name": "sawyer-market",
+  "owner": {
+    "name": "Sawyer Hood",
+    "email": "sawyerjhood@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "library-docs",
+      "source": "./",
+      "description": "Look up documentation and source code for libraries and packages",
+      "strict": false,
+      "keywords": ["documentation", "libraries", "packages", "api", "docs"],
+      "skills": ["./skills/library-docs"]
+    },
+    {
+      "name": "workflow",
+      "source": "./",
+      "description": "Git worktree workflow commands for task-based development",
+      "strict": false,
+      "keywords": ["git", "worktree", "workflow", "branch", "task"],
+      "commands": ["./commands/workflow"]
+    }
+  ],
+  "metadata": {
+    "description": "Sawyer's plugin marketplace for Claude Code",
+    "version": "1.0.0"
+  }
+}
