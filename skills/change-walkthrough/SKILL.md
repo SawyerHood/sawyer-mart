@@ -100,30 +100,30 @@ Examples:
 
 ### 5. Write the Markdown File
 
+Create a `reviews` directory in the user's project and write the walkthrough there:
+
 ```bash
-mkdir -p skills/change-walkthrough/reviews
+mkdir -p reviews
 ```
 
-Write the generated markdown to: `skills/change-walkthrough/reviews/{filename}.md`
+Write the generated markdown to: `reviews/{filename}.md` (use absolute path).
 
-### 6. Install Dependencies (if needed)
+### 6. Install Dependencies and Convert to HTML
 
-Before converting, ensure dependencies are installed:
-
-```bash
-cd skills/change-walkthrough && npm install
-```
-
-### 7. Convert to HTML and Open in Browser
+The conversion script requires npm dependencies. Run all commands from the skill's base directory (shown at the top when the skill loads as "Base directory for this skill: ...").
 
 ```bash
-# Convert markdown to HTML
-node skills/change-walkthrough/scripts/md-to-html.js \
-  skills/change-walkthrough/reviews/{filename}.md
+# Change to skill directory and install dependencies (only needed once per cache)
+cd {SKILL_BASE_DIR} && npm install
+
+# Convert markdown to HTML (use ABSOLUTE paths for input/output)
+node scripts/md-to-html.js /absolute/path/to/reviews/{filename}.md
 
 # Open in default browser
-open skills/change-walkthrough/reviews/{filename}.html
+open /absolute/path/to/reviews/{filename}.html
 ```
+
+Replace `{SKILL_BASE_DIR}` with the skill's base directory path. The script accepts absolute paths for the input file and automatically creates the `.html` file alongside it.
 
 Report to the user the paths to both files and confirm the browser opened.
 
