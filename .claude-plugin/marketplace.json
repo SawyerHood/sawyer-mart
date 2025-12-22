@@ -20,6 +20,14 @@
       "strict": false,
       "keywords": ["git", "worktree", "workflow", "branch", "task"],
       "commands": ["./commands/workflow"]
+    },
+    {
+      "name": "change-walkthrough",
+      "source": "./",
+      "description": "Generate detailed markdown walkthroughs of code changes with HTML export",
+      "strict": false,
+      "keywords": ["git", "diff", "changes", "walkthrough", "review", "documentation"],
+      "skills": ["./skills/change-walkthrough"]
     }
   ],
   "metadata": {

@@ -11,3 +11,7 @@ node_modules/
 # Temp files
 tmp/
 *.log
+
+# Generated HTML from change-walkthrough
+skills/change-walkthrough/reviews/*.html
+skills/change-walkthrough/node_modules/
