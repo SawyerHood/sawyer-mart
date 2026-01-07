@@ -7,27 +7,24 @@
   "plugins": [
     {
       "name": "library-docs",
-      "source": "./",
+      "source": "./plugins/library-docs",
       "description": "Look up documentation and source code for libraries and packages",
       "strict": false,
-      "keywords": ["documentation", "libraries", "packages", "api", "docs"],
-      "skills": ["./skills/library-docs"]
+      "keywords": ["documentation", "libraries", "packages", "api", "docs"]
     },
     {
       "name": "workflow",
-      "source": "./",
+      "source": "./plugins/workflow",
       "description": "Git worktree workflow commands for task-based development",
       "strict": false,
-      "keywords": ["git", "worktree", "workflow", "branch", "task"],
-      "commands": ["./commands/workflow"]
+      "keywords": ["git", "worktree", "workflow", "branch", "task"]
     },
     {
       "name": "change-walkthrough",
-      "source": "./",
+      "source": "./plugins/change-walkthrough",
       "description": "Generate detailed markdown walkthroughs of code changes with HTML export",
       "strict": false,
-      "keywords": ["git", "diff", "changes", "walkthrough", "review", "documentation"],
-      "skills": ["./skills/change-walkthrough"]
+      "keywords": ["git", "diff", "changes", "walkthrough", "review", "documentation"]
     }
   ],
   "metadata": {
