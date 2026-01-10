@@ -1,84 +1,99 @@
-# Sawyer Market
+# Sawyer Mart
 
-A Claude Code plugin marketplace for my personal plugins.
+A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin marketplace for my personal plugins and skills.
+
+## Prerequisites
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
 
 ## Installation
 
-### Step 1: Add the Marketplace
-
-In Claude Code, run:
+First, add the marketplace:
 
 ```
-/plugin marketplace add sawyerhood/sawyer-market
+/plugin marketplace add sawyerhood/sawyer-mart
 ```
 
-### Step 2: Install a Plugin
+Then install any plugin you want:
 
 ```
-/plugin install library-docs@sawyerhood/sawyer-market
+/plugin install <plugin-name>@sawyerhood/sawyer-mart
 ```
 
-### Step 3: Use It!
+Restart Claude Code after installation.
 
-Restart Claude Code after installation to activate the plugin.
+For more details on plugin marketplaces, see the [Claude Code plugin marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces).
 
-## Available Plugins
+## Plugins
 
 ### library-docs
 
-Look up documentation and source code for libraries and packages. Use when you need to understand a library's API or when encountering unfamiliar library usage.
+Look up documentation and source code for libraries and packages. Useful when you need to understand a library's API or encounter unfamiliar library usage.
 
-**Trigger phrases:**
-- "How do I use X library?"
-- "What's the API for Y?"
-- "Show me how Z library handles this"
+**Install:**
+```
+/plugin install library-docs@sawyerhood/sawyer-mart
+```
+
+**Usage:**
+
+> "How do I use the zod library?"
+
+> "What's the API for React Query?"
+
+> "Show me how date-fns handles timezone formatting"
+
+---
 
 ### workflow
 
-Git worktree management commands for task-based development. Includes two commands:
+Git worktree management commands for task-based development. Create isolated workspaces for each task without stashing or switching branches.
 
-**`/workflow:workspace <task-description>`** - Create a new git worktree and branch for a task. Converts task descriptions to kebab-case branch names and sets up the workspace with dependencies installed.
+**Install:**
+```
+/plugin install workflow@sawyerhood/sawyer-mart
+```
 
-**`/workflow:cleanup [branch-name]`** - Merge a worktree branch into main and clean up. Handles merging, worktree removal, and branch deletion.
+**Commands:**
+
+| Command | Description |
+|---------|-------------|
+| `/workflow:workspace <task>` | Create a new git worktree and branch for a task |
+| `/workflow:cleanup [branch]` | Merge a worktree branch into main and clean up |
+
+**Usage:**
+
+> `/workflow:workspace add user authentication`
+
+Creates a new worktree at `../repo-add-user-authentication` with a branch named `add-user-authentication` and installs dependencies.
+
+> `/workflow:cleanup`
+
+Merges the current branch into main, removes the worktree, and deletes the branch.
+
+---
 
 ### change-walkthrough
 
-Generate detailed markdown walkthroughs of code changes with automatic HTML conversion and browser preview.
+Generate detailed markdown walkthroughs of code changes with automatic HTML conversion and browser preview. Great for documenting what you built or reviewing commits.
 
-**Trigger phrases:**
-- "Create a walkthrough"
-- "Explain the changes"
-- "Review recent commits"
-- "Document what changed"
-
-## Repository Structure
-
+**Install:**
 ```
-sawyer-market/
-├── .claude-plugin/
-│   └── marketplace.json
-└── plugins/
-    ├── library-docs/
-    │   └── skills/
-    │       └── library-docs/
-    │           └── SKILL.md
-    ├── workflow/
-    │   └── commands/
-    │       └── workflow/
-    │           ├── workspace.md
-    │           └── cleanup.md
-    └── change-walkthrough/
-        └── skills/
-            └── change-walkthrough/
-                ├── SKILL.md
-                ├── package.json
-                ├── scripts/
-                │   └── md-to-html.js
-                └── tmp/
+/plugin install change-walkthrough@sawyerhood/sawyer-mart
 ```
 
-Each plugin is isolated in its own directory to prevent skill/command duplication across plugins.
+**Usage:**
+
+> "Create a walkthrough of the changes I just made"
+
+> "Document the last 3 commits"
+
+> "Explain what changed in this PR"
 
 ## License
 
 MIT
+
+## Author
+
+[Sawyer Hood](https://github.com/sawyerhood)
