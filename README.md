@@ -52,7 +52,9 @@ Similar to [Context7](https://github.com/upstash/context7), but instead of just 
 
 ### change-walkthrough
 
-Generate detailed markdown walkthroughs of code changes and opens a readable html version in your browser. It has a focus on walking you through the change showing the highlights of the main code patterns and architectural choices using code snippets. This is perfect the middle ground between pure vibe coding and doing full code review and this lets me ship code quickly while still knowing what is going on and being able to flag issues quickly. 
+Generate detailed markdown walkthroughs of code changes and opens a readable html version in your browser. It has a focus on walking you through the change showing the highlights of the main code patterns and architectural choices using code snippets. This is perfect the middle ground between pure vibe coding and doing full code review and this lets me ship code quickly while still knowing what is going on and being able to flag issues quickly.
+
+![Change Walkthrough](assets/walkthrough.png)
 
 **Install:**
 ```
