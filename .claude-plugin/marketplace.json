@@ -1,5 +1,5 @@
 {
-  "name": "sawyer-market",
+  "name": "sawyer-mart",
   "owner": {
     "name": "Sawyer Hood",
     "email": "sawyerjhood@gmail.com"
@@ -10,21 +10,40 @@
       "source": "./plugins/library-docs",
       "description": "Look up documentation and source code for libraries and packages",
       "strict": false,
-      "keywords": ["documentation", "libraries", "packages", "api", "docs"]
+      "keywords": [
+        "documentation",
+        "libraries",
+        "packages",
+        "api",
+        "docs"
+      ]
     },
     {
       "name": "workflow",
       "source": "./plugins/workflow",
       "description": "Git worktree workflow commands for task-based development",
       "strict": false,
-      "keywords": ["git", "worktree", "workflow", "branch", "task"]
+      "keywords": [
+        "git",
+        "worktree",
+        "workflow",
+        "branch",
+        "task"
+      ]
     },
     {
       "name": "change-walkthrough",
       "source": "./plugins/change-walkthrough",
       "description": "Generate detailed markdown walkthroughs of code changes with HTML export",
       "strict": false,
-      "keywords": ["git", "diff", "changes", "walkthrough", "review", "documentation"]
+      "keywords": [
+        "git",
+        "diff",
+        "changes",
+        "walkthrough",
+        "review",
+        "documentation"
+      ]
     }
   ],
   "metadata": {
