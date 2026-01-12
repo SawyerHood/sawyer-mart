@@ -17,7 +17,7 @@ This includes my skills for:
 
 ## Installation
 
-From Claude code run:
+From Claude Code, run:
 
 ```
 /plugin marketplace add sawyerhood/sawyer-mart
@@ -35,7 +35,9 @@ Restart Claude Code after installation.
 
 ### library-docs
 
-Look up documentation and source code for libraries and packages. Useful when you need to understand a library's API or encounter unfamiliar library usage. This is a Context7 replacement that instead of just looking at the public docs it will find the library on github, clone it to tmp, and search it for answers. This is maybe the most impactful change to making sure Claude knows how to use up-to-date versions of libraries properly. 
+Look up documentation and source code for libraries and packages. Useful when you need to understand a library's API or encounter unfamiliar library usage.
+
+Similar to [Context7](https://github.com/upstash/context7), but instead of just looking at public docs, it finds the library on GitHub, clones it to a temp directory, and searches the source for answers. This can significantly improve Claude's ability to use up-to-date versions of libraries correctly. 
 
 **Install:**
 ```
@@ -65,7 +67,7 @@ Generate detailed markdown walkthroughs of code changes and opens a readable htm
 
 ### workflow
 
-Git worktree management commands for task-based development. This is basically light weight conductor in my terminal. 
+Git worktree management commands for task-based development. A lightweight alternative to [Conductor](https://conductor.build) for managing parallel workstreams in your terminal. 
 
 **Install:**
 ```
@@ -91,6 +93,9 @@ Merges the current branch into main, removes the worktree, and deletes the branc
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
